@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Startseite · Luis Hampel</title>
+<meta name="description" content="Portfolio-Webseite — Wirtschaftsinformatik-Student mit IT-Hintergrund.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <div class="brand"><span class="brand-dot"></span> Luis Hampel</div>
+    <button class="nav-toggle" aria-label="Menü öffnen">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Startseite</a></li>
+      <li><a href="lebenslauf.html">Lebenslauf</a></li>
+      <li><a href="horizonte.html">Horizonte</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text reveal">
+        <h1>Hi, ich bin <span class="accent-text">Luis Hampel</span>.</h1>
+        <p class="hero-sub">
+          Aktuell im dualen Studium im Bereich Wirtschaftsinformatik mit
+          Hintergrund als Fachinformatiker für Systemintegration.
+        </p>
+
+        <div class="hero-meta">
+          <span class="meta-chip">🎂 Alter: <strong><span data-age>–</span> Jahre</strong></span>
+          <span class="meta-chip">📍 Standort: <strong>Paderborn</strong></span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="lebenslauf.html" class="btn btn-primary">Lebenslauf ansehen</a>
+          <a href="kontakt.html" class="btn btn-ghost">Kontakt aufnehmen</a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="blob"></div>
+        <img src="assets/Startseite/profil.png" alt="Luis Hampel" class="hero-portrait">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INTRO / ÜBER DIESE SEITE ===================== -->
+  <section class="intro">
+    <div class="container reveal">
+      <div class="section-heading">
+        <span class="eyebrow">Über mich & diese Seite</span>
+        <h2>Warum diese Webseite existiert</h2>
+      </div>
+      <p>
+        Das hier ist meine persönliche Webseite. Sie soll eigentlich nur eine
+        kleine Spielerei für mich sein, aber gleichzeitig meinen beruflichen
+        Werdegang und meine Qualifikationen grob dokumentieren. So kannst du
+        einen Eindruck von mir gewinnen, ohne dass ich zu viele Daten in die
+        weiten des Internets stellen muss.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<button id="confetti-trigger" class="confetti-btn" aria-label="Konfetti auslösen" title="Nur so zum Spaß 🎉">🎉</button>
+<canvas id="confetti-canvas"></canvas>
+
+<footer>
+  © <span id="year"></span> Luis Hampel
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
